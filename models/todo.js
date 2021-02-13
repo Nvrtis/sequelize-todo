@@ -1,8 +1,8 @@
-module.exports = function(sequelize, Datatypes) {
+module.exports = function(sequelize, DataTypes) {
 const Todo = sequelize.define("Todo", {
-    text: Datatypes.STRING,
+    text: DataTypes.STRING,
     complete:{
-        type: Datatypes.BOOLEAN,
+        type: DataTypes.BOOLEAN,
         default: false
     }
 })
